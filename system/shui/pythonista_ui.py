@@ -683,7 +683,7 @@ class ShTerminal(ShBaseTerminal):
     @on_main_thread
     def spellchecking_type(self, value):
         self._spellchecking_type = value
-        self.tvo.performSelector_withObject_('setSpellCheckingType:', value)
+        ObjCInstanceMethod(self.tvo, 'setSpellCheckingType:')(value)
 
     @property
     def inlineprediction_type(self):
