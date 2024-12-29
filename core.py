@@ -159,7 +159,7 @@ class StaSh(object):
             ),
         )
         # warn on py3
-        if self.PY3:
+        if False and self.PY3:
             self.io.write(
                 self.text_style(
                     'Warning: you are running StaSh in python3. Some commands may not work correctly in python3.\n',
