@@ -545,6 +545,7 @@ class ShTerminal(ShBaseTerminal):
         self.autocapitalization_type = ui.AUTOCAPITALIZE_NONE
         self.autocorrection_type = 1
         self.spellchecking_type = 1
+        self.inlineprediction_type = 1
 
     @property
     def delegate(self):
@@ -683,6 +684,16 @@ class ShTerminal(ShBaseTerminal):
     def spellchecking_type(self, value):
         self._spellchecking_type = value
         self.tvo.performSelector_withObject_('setSpellCheckingType:', value)
+
+    @property
+    def inlineprediction_type(self):
+        return self._inlineprediction_type
+
+    @inlineprediction_type.setter
+    @on_main_thread
+    def inlineprediction_type(self, value):
+        self._inlineprediction_type = value
+        self.tvo.performSelector_withObject_('setInlinePredictionType:', value)
 
     @property
     def content_inset(self):
