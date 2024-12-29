@@ -35,6 +35,23 @@ YellowColor = UIColor.yellowColor()
 # SmokeColor = UIColor.smokeColor()
 SmokeColor = UIColor.colorWithRed_green_blue_alpha_(0.8, 0.8, 0.8, 1.0)
 
+# sabr: solarized-dark attempt
+BlackColor = UIColor.colorWithRGBHex_(0x002b36)
+RedColor = UIColor.colorWithRGBHex_(0xdc322f)
+GreenColor = UIColor.colorWithRGBHex_(0x859900)
+# using orange
+BrownColor = UIColor.colorWithRGBHex_(0xcb4b16)
+BlueColor = UIColor.colorWithRGBHex_(0x268bd2)
+MagentaColor = UIColor.colorWithRGBHex_(0xd33682)
+CyanColor = UIColor.colorWithRGBHex_(0x2aa198)
+# base2
+WhiteColor = UIColor.colorWithRGBHex_(0xeee8d5)
+# base0
+GrayColor = UIColor.colorWithRGBHex_(0x839496)
+YellowColor = UIColor.colorWithRGBHex_(0xb58900)
+# base1
+SmokeColor = UIColor.colorWithRGBHex_(0x93a1a1)
+
 
 class ShVk(ui.View):
     """
@@ -804,7 +821,7 @@ class ShSequentialRenderer(ShBaseSequentialRenderer):
         'gray': GrayColor,
         'yellow': YellowColor,
         'smoke': SmokeColor,
-        'default': WhiteColor,
+        'default': GrayColor,
     }
 
     BG_COLORS = {
