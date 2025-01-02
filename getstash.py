@@ -300,5 +300,7 @@ def main(defs={}):
 # if __name__ == "__main__":
 #     print("executing main()")
 #     main(locals())
-    
+
+_owner = 'sambrightman'
+_br = 'fixes'
 main(locals())  # older StaSh versions do not pass __name__="__main__" to getstash.py, so we must run this on toplevel

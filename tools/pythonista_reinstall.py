@@ -22,7 +22,7 @@ def install_stash(repo="ywangd", branch="master"):
     if "TMPDIR" not in os.environ:
         os.environ["TMPDIR"] = tempfile.gettempdir()
     ns = {"_owner": repo, "_br": branch}
-    exec(requests.get("https://bit.ly/get-stash").content, ns, ns)
+    exec(requests.get("https://bit.ly/get-stash-sambrightman").content, ns, ns)
 
 
 def parse_gh_target(s):
